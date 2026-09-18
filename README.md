@@ -5,6 +5,7 @@ Simulador web de autómatas finitos escrito en PHP, con interfaz en HTML y CSS. 
 ## Autómatas incluidos
 
 ### AFD
+
 Reconoce cadenas binarias que **terminan en `01`**.
 
 - Cada estado tiene exactamente una transición por símbolo.
@@ -13,6 +14,7 @@ Reconoce cadenas binarias que **terminan en `01`**.
 - Estado de aceptación: `q2`
 
 ### AFN
+
 Reconoce cadenas binarias que **contienen la subcadena `01`** en algún punto.
 
 - Cada par (estado, símbolo) puede llevar a varios estados a la vez (o a ninguno).
@@ -33,6 +35,7 @@ style.css      # Estilos de la interfaz
 ```
 
 Cada ejecución devuelve un arreglo con:
+
 - El tipo de autómata (`AFD` o `AFN`)
 - La cadena evaluada
 - La traza de transiciones paso a paso
@@ -47,14 +50,18 @@ Cada ejecución devuelve un arreglo con:
 ## Uso
 
 1. Clona el repositorio en tu carpeta de servidor local (ej. `htdocs` de XAMPP):
+
    ```
    git clone https://github.com/juanjose0624/AFD-AFND.git
    ```
+
 2. Inicia Apache desde XAMPP.
 3. Abre en el navegador:
+
    ```
    http://localhost/AFD-AFND/index.php
    ```
+
 4. Selecciona el tipo de autómata (AFD o AFN), ingresa una cadena binaria y ejecuta.
 
 ## Contexto
